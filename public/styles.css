@@ -1,0 +1,317 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #0d0d0d;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #1abc9c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 20px 0 10px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #1abc9c;
+    margin-top: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Social Links */
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1abc9c;
+}
+
+/* Buttons */
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Bio Section */
+.bio-section {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #121212;
+    padding: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #121212;
+    text-align: center;
+    height: 100vh; /* Full screen height */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.skills-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.skills-column h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.skills-tags span {
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+.skills-column p {
+    max-width: 500px;
+    margin: auto;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+/* Education Section */
+.education-section {
+    padding: 50px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.education-section h2 {
+    margin-bottom: 30px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.education-card {
+    background-color: #1e1e1e;
+    border: 2px solid #e63946; /* Red border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 0 1 calc(45% - 20px); /* Responsive width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.education-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+/* Work Experience Section */
+.work-experience-section {
+    padding: 50px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.work-experience-section h2 {
+    margin-bottom: 30px;
+}
+
+.work-experience-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.work-experience-card {
+    background-color: #1e1e1e;
+    border: 2px solid #e63946; /* Red border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 0 1 calc(45% - 20px); /* Responsive width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.work-experience-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.work-experience-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+.work-experience-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.work-experience-card ul li {
+    text-align: left; /* Align text to the left */
+    color: #ccc; /* Slightly lighter color for list items */
+}
+
+/* Full-width work experience card */
+.work-experience-full {
+    flex: 0 1 100%; /* Take up full width */
+    margin-top: 20px; /* Add some space above */
+}
+/* Awards Section */
+.awards-section {
+    padding: 50px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.awards-section h2 {
+    margin-bottom: 30px;
+}
+
+.awards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center align items */
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.award-card {
+    background-color: #1e1e1e;
+    border: 2px solid #e63946; /* Red border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1; /* Take full width available */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition effects */
+}
+
+.award-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    background-color: #2c2c2c; /* Darker background on hover */
+}
+
+.award-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.award-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+.award-source {
+    font-style: italic;
+    color: #1abc9c; /* Color for sources */
+}
+
+/* Icon Section */
+.award-icon {
+    flex: 0 1 20%; /* Set a fixed width for the icon */
+    display: flex;
+    justify-content: center; /* Center the emoji */
+    font-size: 80px; /* Set the size of the trophy emoji */
+    margin-left: 20px; /* Space between text and icon */
+}
+
+/* Single Award Section */
+.single-award {
+    background-color: #1e1e1e;
+    border: 2px solid #e63946; /* Red border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0; /* Add margin for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left; /* Align text to the left */
+}
+
+
+/* General styles for footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #0d0d0d;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
