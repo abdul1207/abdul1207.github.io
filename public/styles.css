@@ -8,13 +8,99 @@ body {
     color: #f4f4f4;
 }
 
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e; /* Dark background */
+    padding: 1px 20px;
+    position: fixed;
+    width: 98%; /* Changed to 100% */
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #1abc9c; /* Logo color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #16a085; /* Change color on hover */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spacing between links */
+}
+
+.nav-links li {
+    position: relative; /* Positioning for dropdowns if needed */
+}
+
+.nav-links a {
+    color: #f4f4f4; /* Link color */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Link color on hover */
+    background-color: rgba(26, 188, 156, 0.3); /* Light background on hover */
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #f4f4f4;
+    margin: 3px 0; /* Space between bars */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        background-color: #1e1e1e; /* Background for mobile */
+        position: absolute;
+        top: 60px; /* Position below the navbar */
+        right: 0;
+        width: 100%; /* Full width */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        z-index: 500;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show hamburger icon */
+    }
+}
+
 /* Header */
 header {
     background: #0d0d0d;
     text-align: center;
     padding: 50px 0;
     position: relative;
-    height: 100vh; /* Full screen height */
+    min-height: 100vh; /* Changed from height to min-height */
     overflow: hidden;
 }
 
@@ -83,7 +169,7 @@ button:hover {
 
 /* Bio Section */
 .bio-section {
-    height: 100vh; /* Full screen height */
+    min-height: 100vh; /* Changed from height to min-height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,12 +184,13 @@ button:hover {
     padding: 50px 20px;
     background-color: #121212;
     text-align: center;
-    height: 100vh; /* Full screen height */
+    min-height: 100vh; /* Changed from height to min-height */
 }
 
 .skills-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Added wrapping */
     margin-top: 30px;
 }
 
@@ -145,6 +232,7 @@ button:hover {
     padding: 50px 20px;
     background-color: #121212;
     text-align: center;
+    min-height: 100vh; /* Changed from height to min-height */
 }
 
 .education-section h2 {
@@ -184,6 +272,7 @@ button:hover {
     padding: 50px 20px;
     background-color: #121212;
     text-align: center;
+    min-height: 100vh; /* Changed from height to min-height */
 }
 
 .work-experience-section h2 {
@@ -233,11 +322,82 @@ button:hover {
     flex: 0 1 100%; /* Take up full width */
     margin-top: 20px; /* Add some space above */
 }
+
+/* Portfolio Section */
+#portfolio {
+    min-height: 100vh; /* Changed from height to min-height */
+    display: flex; /* Use flexbox for vertical centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    position: relative; /* Position relative for absolute children */
+    overflow: hidden; /* Hide overflow to prevent scrolling issues */
+}
+
+.section-title {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Keep items spaced evenly */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.portfolio-item {
+    margin-bottom: 30px; /* Space between portfolio items */
+    padding: 10px; /* Padding for each item */
+    max-width: calc(50% - 20px); /* Two items per row with some margin */
+    flex: 0 1 calc(50% - 20px); /* Responsive flex properties */
+}
+
+.portfolio-item img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+    opacity: 1; /* Show info on hover */
+}
+
+.portfolio-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.portfolio-links a {
+    color: #1abc9c; /* Link color */
+    margin: 0 5px; /* Spacing between links */
+    font-size: 20px; /* Size of the icons */
+}
+
 /* Awards Section */
 .awards-section {
     padding: 50px 20px;
     background-color: #121212;
     text-align: center;
+    min-height: 100vh; /* Changed from height to min-height */
 }
 
 .awards-section h2 {
@@ -304,6 +464,38 @@ button:hover {
     text-align: left; /* Align text to the left */
 }
 
+/* Confetti Styles */
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction */
+    display: none; /* Hide by default */
+    z-index: 999; /* Ensure it's on top */
+}
+
+.confetti .particle {
+    position: absolute;
+    width: 10px; /* Width of confetti particles */
+    height: 10px; /* Height of confetti particles */
+    opacity: 0.9; /* Opacity of confetti particles */
+    border-radius: 50%; /* Round particles */
+    pointer-events: none;
+    animation: fall linear forwards; /* Apply the falling animation */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg); /* Start at the top */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg); /* Move down and rotate */
+        opacity: 0; /* Fade out */
+    }
+}
 
 /* General styles for footer */
 footer {
@@ -314,4 +506,15 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive adjustments for portfolio section */
+@media (max-width: 768px) {
+    #portfolio {
+        min-height: auto; /* Allow height to be auto on small screens */
+    }
+    .portfolio-item {
+        max-width: 100%; /* Take full width on small screens */
+        flex: 0 1 100%; /* Single column layout */
+    }
 }

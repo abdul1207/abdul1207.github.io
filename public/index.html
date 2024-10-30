@@ -11,16 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div class="logo">Abdulrahman</div>
+        <ul class="nav-links">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#awards">Awards</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    
+
     <header>
         <div class="profile-container">
             <img src="WIN_20241020_14_14_56_Pro.jpg" alt="Profile Picture" class="profile-picture">
             <h1>Abdulrahman</h1>
             <p>Aspiring Software Developer</p>
             <div class="social-links">
-                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://medium.com" target="_blank"><i class="fab fa-medium"></i></a>
-                <a href="javascript:void(0)"><i class="fas fa-print"></i></a>
+                <a href="https://www.linkedin.com/in/-642bb7295/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/abdul1207" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <div class="buttons">
                 <button>Contact Me</button>
@@ -29,45 +45,54 @@
         </div>
     </header>
 
-    <div class="bio-section">
+    <div class="bio-section" id="bio">
         <h2>👋 Hello!</h2>
         <p>I'm a software engineering student passionate about technology and innovation, driven to find solutions that connect programming and development.</p>
         <p>With a background in software development, I aim to enhance digital solutions through advanced technologies.</p>
         <p>I believe technology can transform industries and improve efficiency in various domains.</p>
     </div>
 
-    <div class="skills-section">
+    <div class="skills-section" id="skills">
         <h2>SKILLS.</h2>
         <div class="skills-container">
             <div class="skills-column">
-                <h3>Languages and Frameworks</h3>
+                <h3>Languages and Skills</h3>
                 <div class="skills-tags">
                     <span>Java</span>
                     <span>Python</span>
-                    <span>JavaScript</span>
-                    <span>PHP</span>
-                    <span>Android</span>
-                    <span>REST API</span>
-                    <span>Spring</span>
+                    <span>Mobile apps</span>
+                    <span>Automation</span>
+                    <span>Appium</span>
+                    <span>QA</span>
+                    <span>Manual Testing</span>
                 </div>
-                <p>I primarily work with Java, Python, and JavaScript, along with various frameworks for backend development. I have experience with REST APIs and mobile app development.</p>
+                <p>
+                    I have a strong proficiency in <strong>Java</strong> and <strong>Python</strong>, which I utilize to create robust applications and streamline processes. My expertise extends to developing <strong>Mobile apps</strong>, where I focus on delivering seamless user experiences. 
+                    I am experienced in <strong>automation</strong> practices, leveraging tools like <strong>Appium</strong> to enhance testing efficiency and ensure software reliability. Additionally, I have experience in <strong>Quality Assurance (QA)</strong>, allowing me to identify and resolve issues proactively, ultimately contributing to the overall success of the projects I work on.
+                </p>
             </div>
             <div class="skills-column">
-                <h3>Tools and Technologies</h3>
+                <h3>Personal Skills</h3>
                 <div class="skills-tags">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>MySQL</span>
-                    <span>Docker</span>
-                    <span>VS Code</span>
-                    <span>Eclipse</span>
+                    <span>Team Player</span>
+                    <span>Problem-Solving</span>
+                    <span>Adaptability</span>
+                    <span>Time Management</span>
+                    <span>Work Ethic</span>
                 </div>
-                <p>I use Git for version control and have experience with GitHub and Docker. I develop applications using various IDEs such as VS Code and Eclipse.</p>
+                <p>
+                    I am a dedicated <strong>team player</strong> who is good in collaborative environments, contributing to goals while keeping a positive atmosphere. My <strong>problem-solving</strong> abilities allow me to tackle challenges effectively. 
+                    I pride myself on my <strong>adaptability</strong>, quickly adjusting to changing circumstances and embracing new technologies or methodologies to stay ahead in a dynamic field.
+                    
+                    Effective <strong>time management</strong> skills enable me to prioritize tasks and meet deadlines without compromising quality. I have a keen <strong>attention to detail</strong>, ensuring accuracy and thoroughness in all my work, which is vital for both development and quality assurance.
+                    
+                    Finally, my strong <strong>work ethic</strong> drives me to deliver results consistently, demonstrating reliability and commitment to qualtily work in every project I undertake.
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="education-section">
+    <div class="education-section" id="education">
         <h2>EDUCATION.</h2>
         <div class="education-container">
             <div class="education-card">
@@ -77,14 +102,14 @@
             </div>
             <div class="education-card">
                 <h3>TUS Athlone</h3>
-                <p>(Bsc)Software Design with Mobile Apps and Connected Devices</p>
+                <p>(BSc) Software Design with Mobile Apps and Connected Devices</p>
                 <p>Grade: First Honours</p>
                 <p>2021 - Present</p>
             </div>
         </div>
     </div>
 
-    <div class="work-experience-section">
+    <div class="work-experience-section" id="work-experience">
         <h2>WORK EXPERIENCE.</h2>
         <div class="work-experience-container">
             <div class="work-experience-card">
@@ -109,20 +134,73 @@
                 </ul>
             </div>
             <div class="work-experience-card work-experience-full">
-                <h3>Your Third Work Experience</h3>
-                <p>Your Job Title</p>
-                <p>Your Location</p>
-                <p>Your Duration</p>
-                <ul>
-                    <li>Your responsibility or achievement 1.</li>
-                    <li>Your responsibility or achievement 2.</li>
-                    <li>Your responsibility or achievement 3.</li>
-                </ul>
+                <h3>CBE</h3>
+                <p>Test Engineer(QA)</p>
+                <p>Claremorris (Co.Mayo)</p>
+                <p>January 2024 - September 2024</p>
+                <p>
+                    During my internship, I primarily focused on <strong>automation testing</strong> with a strong emphasis on using <strong>Python</strong> in conjunction with <strong>VS Code</strong> and <strong>Appium</strong> to automate tests for handheld Android devices. This experience allowed me to develop robust automated test scripts, enhancing the efficiency and effectiveness of the testing process.
+                </p>
+                <p>
+                    In addition to my automation efforts, I also performed a small amount of <strong>manual testing</strong>, which provided me with a comprehensive understanding of the testing lifecycle and the importance of user experience. 
+                </p>
+                <p>
+                    I took on an project to automate <strong>self-checkout processes</strong>, utilizing <strong>Ranorex</strong> to record and execute tests, which significantly streamlined the testing phase for this application. Throughout this project, I collaborated with my team using <strong>Azure</strong> to manage tasks and user stories effectively, ensuring that our goals were aligned and progress was tracked.
+                </p>
+                <p>
+                    Additionally, I worked closely with other team members to identify and raise <strong>bugs</strong>, contributing to a culture of quality and continuous improvement within the team. This experience not only honed my technical skills but also strengthened my ability to work collaboratively in a team environment.
+                </p>
             </div>
         </div>
     </div>
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container" data-aos="fade-up">
 
-    <div class="awards-section">
+        <div class="section-title">
+            <h2>My Work</h2>
+        </div>
+
+        <div class="row portfolio-container">
+
+            <div class="col-lg-6 col-md-6 portfolio-item">
+                <div class="portfolio-wrap">
+                    <img src="collection-newspapers.jpg" class="img-fluid" alt="Newspaper App">
+                    <div class="portfolio-info">
+                        <h4>Newspaper App</h4>
+                        <p>A CLI application for managing newspaper articles with user logins.</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/newspaper-app.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Newspaper App"><i class="bx bx-plus"></i></a>
+                            <a href="https://github.com/your-username/newspaper-app" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 portfolio-item">
+                <div class="portfolio-wrap">
+                    <img src="securityjpg.jpg" class="img-fluid" alt="Security System">
+                    <div class="portfolio-info">
+                        <h4>Raspberry Pi 4 Security System</h4>
+                        <p>A security system featuring motion detection and real-time notifications.</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/security-system.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Raspberry Pi 4 Security System"><i class="bx bx-plus"></i></a>
+                            <a href="https://github.com/your-username/security-system" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Portfolio Section -->
+
+
+
+</section><!-- End Portfolio Section -->
+
+    <div class="awards-section" id="awards">
         <h2>AWARDS.</h2>
         <div class="awards-container">
             <div class="award-card">
@@ -134,20 +212,26 @@
             </div>
         </div>
     
-    
-
-    
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>References available upon request.</p>
-        </section>
-    </main>
+ 
+        <!-- Confetti container -->
+        <div id="confetti" class="confetti"></div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Abdulrahman. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Ensure the script file is linked -->
+    <script>
+        // JavaScript functionality
+        document.getElementById('contact-btn').onclick = function() {
+            const emailDisplay = document.getElementById('email-display');
+            emailDisplay.style.display = emailDisplay.style.display === 'none' ? 'block' : 'none';
+        };
+
+        document.getElementById('download-btn').onclick = function() {
+            window.location.href = 'C:\Users\abdul\Documents\CV1.docx'; // Change this to the actual path of your CV file
+        };
+    </script>
 </body>
 </html>
