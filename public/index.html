@@ -31,7 +31,7 @@
 
     <header>
         <div class="profile-container">
-            <img src="WIN_20241020_14_14_56_Pro.jpg" alt="Profile Picture" class="profile-picture">
+            <img src="pfp.jpg" alt="Profile Picture" class="profile-picture">
             <h1>Abdulrahman</h1>
             <p>Aspiring Software Developer</p>
             <div class="social-links">
@@ -39,18 +39,21 @@
                 <a href="https://github.com/abdul1207" target="_blank"><i class="fab fa-github"></i></a>
             </div>
             <div class="buttons">
-                <button>Contact Me</button>
-                <button>Download CV</button>
+                <button onclick="location.href='#contact-info'">Contact Me</button>
+                <a href="CV1.pdf" class="button" download>Download CV</a>
             </div>
+            
         </div>
     </header>
 
     <div class="bio-section" id="bio">
         <h2>👋 Hello!</h2>
-        <p>I'm a software engineering student passionate about technology and innovation, driven to find solutions that connect programming and development.</p>
-        <p>With a background in software development, I aim to enhance digital solutions through advanced technologies.</p>
-        <p>I believe technology can transform industries and improve efficiency in various domains.</p>
-    </div>
+        <p>I'm a software engineering student passionate about <strong>Java</strong>, <strong>Python</strong>, and <strong>mobile app development</strong>, driven to create innovative solutions that enhance user experiences.</p>
+    
+        <p>With a BSc in <strong>Software Design with Mobile Apps and Connected Devices</strong>, I have a solid foundation in software development practices, empowering me to leverage technology for impactful applications.</p>
+        
+        <p>I believe automation and quality assurance can significantly improve software reliability. My goal is to develop advanced testing methodologies that streamline processes and elevate software quality. 🚀</p>
+        </div>
 
     <div class="skills-section" id="skills">
         <h2>SKILLS.</h2>
@@ -217,21 +220,21 @@
         <div id="confetti" class="confetti"></div>
     </div>
 
+        <!-- Contact Me Section -->
+        <div class="contact-me" id="contact-info">
+            <h2>📞 Contact Me</h2>
+        </div>
+
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+        <p>Email: <a href="mailto:a00296332@student.tus.ie">a00296332@student.tus.ie</a></p>
+        <p>Phone: <span>+08526261234</span></p>
+    </div>
     <footer>
         <p>&copy; 2024 Abdulrahman. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Ensure the script file is linked -->
-    <script>
-        // JavaScript functionality
-        document.getElementById('contact-btn').onclick = function() {
-            const emailDisplay = document.getElementById('email-display');
-            emailDisplay.style.display = emailDisplay.style.display === 'none' ? 'block' : 'none';
-        };
+    <script src="script.js"></script>=
 
-        document.getElementById('download-btn').onclick = function() {
-            window.location.href = 'C:\Users\abdul\Documents\CV1.docx'; // Change this to the actual path of your CV file
-        };
-    </script>
 </body>
 </html>

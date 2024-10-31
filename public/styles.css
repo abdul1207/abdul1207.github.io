@@ -151,21 +151,27 @@ p {
     margin: 20px 0;
 }
 
-button {
+button, .button {
     background-color: #1abc9c;
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
+    width: 150px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin: 5px;
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Make the link behave like a button */
+    text-align: center; /* Center text in both buttons */
+    line-height: 40px; /* Adjust line-height to match height for vertical centering */
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: #16a085;
     transform: scale(1.05);
 }
+
 
 /* Bio Section */
 .bio-section {
@@ -255,7 +261,10 @@ button:hover {
     flex: 0 1 calc(45% - 20px); /* Responsive width */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
+.education-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    background-color: #2c2c2c; /* Darker background on hover */
+}
 .education-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -295,7 +304,10 @@ button:hover {
     flex: 0 1 calc(45% - 20px); /* Responsive width */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-
+.work-experience-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    background-color: #2c2c2c; /* Darker background on hover */
+}
 .work-experience-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -497,7 +509,48 @@ button:hover {
     }
 }
 
-/* General styles for footer */
+/* Contact Me Section */
+.contact-me {
+    text-align: center; /* Center-align the heading */
+    padding: 20px; /* Add padding around the section */
+    background-color: #101111; /* Background color for the section */
+    color: #af1818; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+.contact-me h2 {
+    font-size: 24px; /* Font size for the heading */
+    margin: 0; /* Remove default margin */
+}
+
+/* Contact Information Section */
+.contact-info {
+    text-align: center; /* Left-align the text */
+    padding: 20px; /* Add padding around the section */
+    background-color: #181717; /* Light background for contrast */
+    border: 1px solid #ed1717; /* Border for the section */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.contact-info p {
+    font-size: 16px; /* Font size for paragraphs */
+    margin: 10px 0; /* Space between paragraphs */
+}
+
+.contact-info a {
+    color: #1abc9c; /* Color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-info span {
+    font-weight: bold; /* Bold style for the phone number */
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
