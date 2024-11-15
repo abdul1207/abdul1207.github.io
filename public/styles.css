@@ -508,6 +508,15 @@ button:hover, .button:hover {
         opacity: 0; /* Fade out */
     }
 }
+.video-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.video-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
 
 /* Contact Me Section */
 .contact-me {
